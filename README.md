@@ -24,3 +24,4 @@
 ### 다른 환경에서 git 이어서 작업하기
 * 새 폴더 연결하기
 * ` git clone 저장주소 붙여넣기`
+* git pull origin main 파일 내려받기
