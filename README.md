@@ -24,4 +24,11 @@
 ### 다른 환경에서 git 이어서 작업하기
 * 새 폴더 연결하기
 * ` git clone 저장주소 붙여넣기`
-* git pull origin main 파일 내려받기
+* `cd 저장소폴더명`
+* 자유롭게 수정 후 저장
+* `git stauts` 상태확인
+* `git add` 스테이징 업로드
+* `git commit -m` '메세지'
+* `git push origin main` 저장소 업로드
+### ( 위 이어서) 다른 환경에서 git 이어서 작업하기(학원)
+* git pull origin main 집에서 올린 파일 내려받기
