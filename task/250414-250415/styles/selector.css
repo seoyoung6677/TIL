@@ -8,10 +8,10 @@
 #weather p.dust {color:black;}
 #weather .result {color:black;}
 #news {background-color:lightgrey;}
-#news a {background-color:green; color:white;}
+#news > a {background-color:green; color:white;}
 #news .box {}
 #news .box a {}
 #news .box a h2 {background-color:beige; color:black;}
 #news .box a p {color:red;}
 #news p {color:green;}
-#news span {color:black;}
+#news p span {color:black;}
