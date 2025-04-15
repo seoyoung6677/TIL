@@ -1,10 +1,63 @@
-#mobile_wrap {background-color:#F8D2E5;}
-#mobile_wrap .photo  {}
+#mobile_wrap {
+    background-color:#F8D2E5;
+    width:440px; height:956px;
+    text-align:center;/*자식,자손 정렬 */
+    font-family: 'pretendard', sans-serif;/* 자식,자손 글꼴 통일 */
+    
+}
+#mobile_wrap .photo  {
+    margin-top:125px;
+    margin-bottom:18px;
+    display:inline-block
+}
 #mobile_wrap .photo img {}
-#mobile_wrap .h1 {}
-#mobile_wrap .h1 span {}
-#mobile_wrap p {}
-#mobile_wrap .git {}
-#mobile_wrap h2 {}
-#mobile_wrap .skills {}
-#mobile_wrap .skills {}
+#mobile_wrap h1 {
+    /* 글꼴은 부모 상속 상태 */
+    font-weight:600;
+    font-size:1.75rem;
+    letter-spacing:-0.02rem;
+    line-height:1;
+    color:black;
+    margin-bottom: 40px;
+    
+}
+#mobile_wrap h1 span {
+    /* 글꼴,행간,자간 상속 상태 */
+    color:#7B1919;
+    font-weight: 800;
+    font-size: 1.875rem;
+}
+#mobile_wrap h2 {
+    line-height:1.8;
+    font-size: 1rem;
+    letter-spacing:-0.02rem;
+    font-weight:800;
+    width:270px;
+    margin-left:auto;
+    margin-right:auto;
+    /* display:inline-block; */
+    text-align:left;
+}
+#mobile_wrap .git {
+    line-height:1.8;
+    text-align:left;
+    width:270px;
+    letter-spacing:-0.02rem;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mobile_wrap .skills li
+{
+    font-size: 1rem;
+    margin-bottom:;
+    line-height:1.8;
+    text-align:left;
+    margin-left: auto;
+    margin-right: auto;
+    width:270px;
+    
+
+    
+
+}

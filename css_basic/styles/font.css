@@ -1,0 +1,70 @@
+h1 {
+    background-color:yellow;
+    font-family:'궁서체','바탕체',serif;
+    /* 글꼴명이 한글 또는 공백이 포함되어 있을 경우 따옴표를 묶어서 작성해야 한다 */
+    font-weight: 900;
+}
+h2{
+    background-color:palevioletred;
+    font-family:'굴림','돋음','고딕', sans-serif;
+    font-weight:600 ;
+}
+h3{
+    background-color:aqua;
+    font-family:'Noto Sans KR', sans-serif ;
+    font-weight:900;
+}
+h4{
+    background-color:greenyellow;
+    font-family:'Nanum Myeongjo', serif;
+    font-weight:500;
+}
+h5{
+    background-color:blanchedalmond ;
+    font-family: 'Nanum Pen Script',serif;
+    font-weight:300;
+}
+p{
+    background-color:pink;
+    font-family:'pretendard', sans-serif ;
+    font-weight:800;
+    /* 글꼴 굵기 설정 값 400(기본값) */
+}
+.size_wrap {
+    background-color:rgba(0,0,0,0.1);
+    font-size:1.25em;
+}
+.size_wrap dt {}
+.size_wrap dd {font-size:1rem;}
+.size_wrap .content {
+    background-color:;
+    font-family:'pretendard', sans-serif ;
+    font-size:0.875rem;
+    font-weight: 600;
+    line-height:1.7;
+
+}
+.details {
+    background-color:white;
+    color:#333;
+    font-size:1.25rem;
+    line-height:1.5;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:-0.02em; /* 피그마 -2% */
+}
+.details code {
+background-color:yellow ;
+color:blue;
+
+}
+.box{
+    background-color:#000;
+    color:#fff;
+    width:200px; height:200px;
+    text-align:center;
+    /*  text-aligin속성은 속성값을 입력한 대상기준으로 그 자식 또는 자손이 인라인 요소일 경우만 적용된다.(단순 글자도 인라인으로 인식함) */
+    line-height:200px;
+    /* linen-heigt을 이용한 수직정렬 주의 사항 */
+    /* 요소의 height값이 px로 작성된 경우 그 값을 그대로 line-heigt의 px값으로 작성하여 수직 가운데 정렬을 적용한다. 단, 글자가 2줄 이상일 경우 적용해선 안되며 1줄일때만 사용해야 한다. */
+}
