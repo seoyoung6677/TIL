@@ -1,0 +1,52 @@
+/* index.css */
+#wrap {
+    background-color: #F5F7FA;
+    width:440px;
+    height:956px;
+    text-align:center;
+}
+#wrap h1 {
+    margin-bottom:68px;
+    padding-top:275px;
+
+}
+#wrap h1 img {}
+#wrap .btn_wrap {
+    
+    width:300px ;
+    /* 블록의 너비값을 부모보다 작게 설정했을 때 블록을 가운데정렬하고싶다면? */
+    margin-left:auto ;
+    margin-right:auto ;
+    text-align: left;/* btn_wrap의 인라인 자식, 자손왼쪽 정렬 */
+}
+#wrap .btn_wrap a {
+    display:block;/* 블록의 너비는 부모의 너비의 100%와 같다 */
+    text-align: center;/* 글지보다 넓은 너비를 가진 a의 자식글자를 가운데 */
+    
+}
+#wrap .btn_wrap .login_btn {
+    height: 40px;
+    line-height:40px ;
+    background-color: #6C8EBF; color:#ffffff;
+    /* border: 선두께 선모양 선색상 */
+    border-radius:10px;
+    border:1px solid #000;
+    font-size:0.875rem ;
+    
+
+}
+#wrap .btn_wrap .sign_up_btn {
+    margin-top:16px ;
+    margin-bottom:11px;
+    height: 40px;
+    line-height:40px ;
+    background-color: #ffffff;
+    border-radius:10px;
+    /* border: 선두께 선모양 선색상 */
+    border:1px solid #000;
+    font-size:0.875rem ;
+}   
+#wrap .btn_wrap .pw_search {
+    font-size: 0.75rem;
+    display: inline;
+}
