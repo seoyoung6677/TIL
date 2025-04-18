@@ -4,52 +4,82 @@
     height:956px;
     padding-left:15px ;
     padding-right:15px ;
+    letter-spacing: -0.02em;
 }
 #wrap h1 {
-    font-size:2.5rem ;
-    font-weight:700;
+    font-size:2.5rem ;/* 40px */
+    font-weight:700;/* bold */
     padding-top:150px ;
     margin-bottom: 32px;
     color:#6C8EBF;
 }
-#wrap > p {
-    margin-bottom: 53px;
-}/*  #wrap 모든 자식p */
+#wrap > p { }/*  #wrap 모든 자식p */
 #wrap h1+p {
-    background-color: yellow;
 }/* #wrap의 h1 옆에 */
 
 #wrap #login_frm {
-    background-color: #6C8EBF;
-    width:410px;
-    
+    margin-top: 69px;
+    margin-bottom: 222px;
 }
 
 
-#wrap #login_frm h2 {
-    margin-top: 17px;
+#wrap #login_frm h2 { 
     font-size: 1.375rem;
-    
+    color:#6C8EBF;
+    font-weight:700;
+    margin-bottom: 17px;
 }
 #wrap #login_frm p {
-    margin-top: 17px;
+}  
+#wrap #login_frm p.user_in {
+    margin-bottom:41px
+}
+#wrap #login_frm p.user_btn {
+    margin-bottom:11px
+}
+
+#wrap #login_frm p input::placeholder {
+    font-weight: 300px;
+    font-size: 0.875rem;
+    color: #B2AAAA;
+} /* placeholder 속성선택자작성법 */
+
+#wrap #login_frm p input {
     width: 410px;
+    border-radius: 10px;
     background-color: #fff;
     border:1px solid #000;
-    border-radius: 10px;
-    height: 44px;
-    line-height:44px ;
-    
-}
-#wrap #login_frm p input {
-    
+    padding-left:20px ;
+    padding-right:20px ;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
 }
 #wrap #login_frm p #login_btn {
+    width:410px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px ;
+    padding-right:20px ;
+    border-radius:10px;
+    border:1px solid #000;
+    font-weight: 300;font-size: 0.875rem;
+}
+#wrap #login_frm p .login_Google {
+    width: 410px;
+    border-radius: 10px;
+    background-color: #fff;
+    border:1px solid #000;
+    display: block;
+    text-align: center;
+    font-weight: 300;font-size: 0.875rem;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px ;
+    padding-right:20px ;
     
 }
-#wrap #login_frm p .login_google {}
 #wrap #login_frm+p {
-    background-color: coral;
+    text-align: center;
 }/* #wrap의 login_frm옆에 p */
 #wrap #login_frm+p a {}
