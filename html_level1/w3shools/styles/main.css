@@ -4,7 +4,7 @@
     height:956px;
     /* padding-left:15px ;
     padding-right:15px ; */
-    paddidng:15px 0;
+    paddidng: 0 15px;
     letter-spacing: -0.02em;
 }
 #wrap h1 {
@@ -12,7 +12,7 @@
     font-weight:700;/* bold */
     /* padding-top:150px ;
     margin-bottom: 32px; */
-    padding:150px 0;
+    padding:150px 0 0;
     margin:0 0 32px;
     color:#6C8EBF;
 }
