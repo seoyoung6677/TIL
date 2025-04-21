@@ -1,0 +1,35 @@
+/* bg.css */
+.bg {
+    width:1000px; height:1000px;
+    background-repeat:no-repeat;
+}
+.bg1 {
+    background:yellow url(https://i.pinimg.com/736x/c9/5e/da/c95eda3524fb2c8901ce18257e5dd584.jpg) right center;
+    /* background-color:yellow;
+    background-image: url(https://i.pinimg.com/736x/c9/5e/da/c95eda3524fb2c8901ce18257e5dd584.jpg);
+    /* background-repeat:no-repeat; */
+    /* background-position:right center;/
+     */
+    
+}
+.bg2 {
+    background:aqua url(https://i.pinimg.com/236x/8b/a2/83/8ba283897b9ad414c929ca1a8630b4bd.jpg) 0 60%;
+    /* background-color:aqua; */
+/*     background-image: url(https://i.pinimg.com/236x/e0/bd/18/e0bd1862017004c93035c41f20c7e557.jpg); */
+    /* background-image:url(../images/test3.jpg); */
+    /* background-repeat:repeat-x;
+    background-repeat:repeat-y; */
+    /* background-position:0 60%; *//* left top이랑 똑같은거 */
+    /* background-size:contain; /* 배경에 따라서 빈부분이 생길 수 있음 */
+    /* background-size:800px auto;
+ */
+}
+.bg3 {
+    background:brown url(https://i.pinimg.com/236x/52/2c/e5/522ce52e748b8259ae25afdd686935fa.jpg) no-repeat fixed center 50% / cover;
+    /* height:3000px;
+    background-color:brown;
+    background-image:url(https://i.pinimg.com/474x/8c/4f/f4/8c4ff4d8cdfe75284c142e3d692637a7.jpg);
+    background-position:center 50%;
+    background-attachment:fixed; */
+    /* background-size:cover; */
+}
