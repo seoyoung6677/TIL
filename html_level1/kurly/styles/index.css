@@ -27,7 +27,7 @@ main #login_frm .member_info {
 }
 main #login_frm .member_info dt {
     width:200px;
-    background-color:lime;
+    /* background-color:lime; */
     float:left; clear:both;
 }
 main #login_frm .member_info dd {
@@ -36,14 +36,14 @@ main #login_frm .member_info dd {
 /* 사용자입력, 선택 양식을 담은 두번째 dd 선택자 */
 /* main #login_frm .member_info dd:nth-of-type(odd) */
 main #login_frm .member_info dd:nth-of-type(2n+1)
-{background-color:yellow;
+{/* background-color:yellow; */
     width:650px;  
     
 }
 /* 중복 확인, 인증번호받기를 담은 세번째 dd선택자 */
 /* main #login_frm .member_info dd:nth-of-type(even) */
 main #login_frm .member_info dd:nth-of-type(2n)
-{background-color:skyblue;
+{/* background-color:skyblue; */
     width:150px;
     float:right;
 }
@@ -58,20 +58,105 @@ main #login_frm .member_info dd input[name^=user]{background-color:#fff;
 }
 /* ==========================개별속성(id) */
 /* ===========================오른쪽 중복확인, 인증번호 버튼 묶음 선택자 */
-main #login_frm .member_info dd:nth-of-type(2n) .btn {background-color:red;}
+main #login_frm .member_info dd:nth-of-type(2n) {
+    text-align:right;/* 정렬하고자하는 부모한테 주기 */
+
+}
+main #login_frm .member_info dd:nth-of-type(2n) .btn {/* 인라인임 */
+    background-color:#5f0080; color:#fff;
+    width:90%; height:45px;
+    border-radius:5px;
+}
+main #login_frm .member_info dd:nth-of-type(2n) .btn:hover {
+    filter:brightness(110%);
+}
 /* 휴대폰,주소,성별, 생년월일 선택자 */
 main #login_frm .member_info dd input [name$=id] {}
-main #login_frm .member_info dd select[name^=news] {}
+main #login_frm .member_info dd select[name^=news] {
+    width:60px; border:1px solid #ccc; border-radius:4px;
+    padding:4px; font-size:0.875rem; height:50px;
+    float:left;
+    margin-right:5px;
+    background:#fff url(../images/ico_down_16x10.png) no-repeat 92% center / 8px;
+    
+}
 main #login_frm .member_info dd select[name^=news] option {}
-main #login_frm .member_info dd input[name^=phone]  {}
+main #login_frm .member_info dd input[name*=phone]  {
+    float:left;
+    width:calc(90% - 65px);
+}
 
-/* 인증번호 버튼 개별 선택자 */
-main #login_frm .member_info dd #address_search_btn {}
-main #login_frm .member_info dd #authentication_btn {background-color:coral;}
-main #login_frm .member_info dd #address_search_btn + span {}
-main #login_frm .member_info dd input [name=gender] {}
-main #login_frm .member_info dd input [name=gender] + label{}
-main #login_frm .member_info dd input [name^=birthday]{}
+/* =============================인증번호 버튼 개별 선택자 */
+main #login_frm .member_info dd #authentication_btn {
+    background-color:#ccc; border:1px solid #5f0080;
+    border-radius: 4px;
+    width:clac(650px * 0.9);
+    /* 650px*0.9 */
+    
+}
+main #login_frm .member_info dd #address_search_btn {
+    border:1px solid #5f0080;
+    background-color:#fff; width:90%; padding:12px 0; border-radius:4px;
+    
+}
+main #login_frm .member_info dd #address_search_btn + span {
+    display:block; color:#aaa;
+}
+main #login_frm .member_info .gender_g {text-align: center;}
+main #login_frm .member_info dd input[name=gender] { display:none;}
+main #login_frm .member_info dd input[name=gender] + label{
+    /* 비활성화 디자인 */
+    background-image:url(../images/check_state\ \(1\).svg);
+    /* background-color: lime; */
+    background-repeat:no-repeat;
+    background-size:16px;/* 인라인이라 컨테인하면 애매하게 잘림 */
+    background-position:0 3px;
+    padding-left:35px;
+    margin-right:20px;
+}
+main #login_frm .member_info dd input[name=gender] + label:last-of-type {
+margin-right:0;/* 마지막  선택안함뒤에 여백은 없애주기 */
+}
+main #login_frm .member_info dd input[name=gender]:checked + label {
+    /* 활성화 디자인 */
+    background-image:url(../images/check_state_on.png);
+      /* filter:invert(1); */
+
+    
+
+
+}
+main #login_frm .member_info .gender_g ~ dd {
+    text-align:center;
+    
+    
+    
+    
+    
+}/* gender_g옆 모든 dd */
+main #login_frm .member_info dd:nth-last-of-type(2){
+    background:#fff;
+    width:calc(650px * 0.9);
+    border-radius:4px;
+    padding:12px 0;
+    border:1px solid #5f0080;
+    
+}
+main #login_frm .member_info dd input[name^=birthday]{
+    width:60px; text-align:center;
+    /* background-color:aqua; */
+    
+    
+}
+main #login_frm .member_info dd:nth-last-of-type(2) span::after {/* 가상의 태그 */
+    content:'/';
+    display:inline-block;
+    font-size:14px; color:#aaa;
+    margin:0 3px;
+}
+main #login_frm .member_info dd:nth-last-of-type(2) span:last-child::after {
+    display:none;
+}
 
 /* ==========================가입버튼 */
 main #login_frm .member_info dd input {}
@@ -89,5 +174,16 @@ main #login_frm .member_info dd #male {}
 main #login_frm .member_info dd #female {}
 main #login_frm .member_info dd #gender_none{}
 /* =================================가입버튼 */
-main #login_frm .btn {}
-main #login_frm .btn #sign_up_btn {}
+main #login_frm > .btn {
+    text-align:center;/* 부모한테 주기 */
+    margin:50px 0 0;/* height:50px *;/* 패딩으로 줘도 되고 높이로 줘도 됨 */
+}
+main #login_frm .btn #sign_up_btn {
+    background-color:#5f0080; color:#fff;
+    width:300px; padding:14px 0;
+    border-radius:11px;
+    
+}
+main #login_frm .btn #sign_up_btn:hover {
+    filter:brightness(110%);
+}
