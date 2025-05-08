@@ -25,9 +25,12 @@
 
         main #visual #deco .obj1 {
             top:170px; left:50%; margin-left:-342px;
+            
         }
         main #visual #deco .obj2 {
             left:0; top:150px;
+            
+
         }
         main #visual #deco .obj3 {
             left:100px; top:250px;
@@ -50,7 +53,7 @@
         main #visual #deco .obj9 {
             right:0; top:440px;
         }
-
+        
         main #book_center {
             position:absolute; 
             left:50%; bottom:-50px; margin-left:-181px;
@@ -67,9 +70,25 @@
             text-align:center; background:#f1f1f1; color:#222;
         }
         main .category a.active {background:#26bad7; color:#fff;}
-
+        /* d애니멩션 호출 그룹 */
+        main #visual #deco .obj1, 
+        main #visual #deco .obj3,
+        main #visual #deco .obj6 {animation:rotate 2s linear alternate infinite;}
+        main #visual #deco .obj5,
+        main #visual #deco .obj8, 
+        main #visual #deco .obj2,
+        main #visual #deco .obj4,
+        main #visual #deco .obj9,
+        main #visual #deco .obj7{animation:scale 2s linear alternate-reverse infinite;}
         /* 애니메이션 */
-
+        @keyframes rotate {
+            from {transform:rotate(0);}
+            to {transform:rotate(20deg);}
+        }
+        @keyframes scale {
+            from {transform:scale(1);}
+            to {transform:scale(1.4);}
+        }
     </style>
 </head>
 <body>
