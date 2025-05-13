@@ -32,38 +32,46 @@
         #menu_title img {padding:0 10px;}
         /* 메뉴내용 */
         .menu_contents {position:relative;}
-        .menu_contents .menu {
+        .menu_contents .menu { /* 공통이름 메뉴 */
             display:flex; justify-content:space-between;
             position:absolute; left:0; top:0;
+            display:none;
+        }
+        .menu_contents .menu1 {
+            display:flex;
         }
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
             border-radius:10px; 
+            transition:border-radius 0.5s;
         }
         .menu_contents .menu a:last-child {margin-right:0}
         .menu_contents .menu a img {width:100%;}
         /* 커피정보 */
         .menu_contents .menu .info {
             background:rgba(0,102,51,0.8); /*#006633 == rgb(0,102,051)*/
-            color:#fff;
             width:100%; height:100%; display:block;
             position:absolute; left:0; top:0;
             text-align:center;
-            display:none;
+            opacity:0;
+            transition:opacity 0.3s;
         }
+        .menu_contents .menu a:hover {border-radius:50%;}
+        .menu_contents .menu a:hover .info {opacity:1;} /* a의 자식인 info가 */
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
             display:block; font-weight: 600;
             line-height:1.5;
-            opacity:0;
+            color:#fff;
+            
         }
         .menu_contents .menu .info span:hover{
-            opacity:1;
+            
         }
-        .menu_contents .info a {display:none;}
+        /* .menu_contents .info a {display:none;} */
         .menu_contents .menu .info:hover{
-            display:block;
-            animation:radius 0.2s linear both ;
+            /* display:block;
+            animation:radius 0.2s linear both ; */
         }
         /* active class + animation */
         .active {font-weight:800;}
@@ -72,16 +80,11 @@
             width:100%; height:2px; background:#006633;
             position:absolute; bottom:-10px; left:0;
         }
-        .menu_contents .menu2 {display:none;}
+        /* .menu_contents .menu2 {display:none;}
         .menu_contents .menu3 {display:none;}
         .menu_contents .menu *{animation:radius 02s both;}
         .menu_contents .menu *:hover {}
-
-        /* 애니메이션 영역 */
-        @keyframes radius {
-            0% {border-radius:0;}
-            100% {border-radius:50%;}
-        }
+ */
 
     </style>
     <script>
