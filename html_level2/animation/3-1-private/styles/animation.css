@@ -6,11 +6,11 @@
         transform:rotate(360deg);
     }
 }
-@keyframes translate {
+@keyframes bg {
     0% {
-        background-position:0;
+        background-position-x:0;
     }
     100% {
-        background-position:100px;
+        background-position-x:1000px;
     }
 }
