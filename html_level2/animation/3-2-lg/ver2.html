@@ -41,13 +41,13 @@
             width:100%;
 
         }
-        main .txt_bg_ani {
+        main .txt_bg_ani { /* 움직여야하는 글자 */
             background:url(images/bg_flow.png) repeat-x left top;
             height:150px; width:100%;
             position:absolute; z-index:30;
-            animation:right 10s linear infinite backwards;
-        }
-        @keyframes right {
+            animation:pst 10s linear infinite; /* 일정속도로 무한반복 */
+        }  /* transition은 마우스 동작, animation은 자동재생임! */
+        @keyframes pst {
             0% {
                 background-position-x:0;
             }
@@ -65,10 +65,10 @@
     <main>
         <div class="center">
             <div class="video_bg">
-                <video src="video/red3.mp4" autoplay muted loop></video>
+                <video src="video/red3.mp4" autoplay muted loop></video> <!-- autoplay,muted 중요한 속성들임 -->
                 <img src="images/img_intro.png" alt="">
             </div>
-            <div class="txt_bg_ani"></div>
+            <div class="txt_bg_ani"></div><!-- 이미지가 스타일 백그라운드로 들어가있음 -->
         </div>
     </main>
 </body>
