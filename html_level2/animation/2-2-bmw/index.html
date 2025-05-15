@@ -9,11 +9,9 @@
     <style>
         #wrap {
             width:100%; /* height:100vh; */
-            background:url(images/bmw_bg.jpg);
-            background-repeat:no-repeat;
-            background-position-y:50%;
+            background:url(images/bmw_bg.jpg) center 40% /cover; 
             position:relative;
-            background-size:cover;
+            
         }
         header {
             width:1200px; margin:0 auto; padding:30px 0;
@@ -24,23 +22,30 @@
             border-bottom:1px solid rgba(255,255,255,0.2);
             width:80%; margin:0 auto; display:flex; justify-content:space-around;
         }
-        header nav a {padding:10px 0; position:relative;color:white;}
+        header nav a {padding:10px 0; position:relative; color:white;}
         header nav a::after {
-            content:''; display:none;
+            content:''; /* display:none;ㄴㄴㄴㄴ */ display:block;
             width:100%; height:1px; background:#cae4ff;
-            position:absolute; bottom:-1px;
-            transform:scalex(0);
+            position:absolute; bottom:-1px; /* 두개의 선이 완전히 겹치도록 -1픽셀 */
+            transform:scaleX(0); /* transform은 중심에서부터 커진다!!!!!! */
+            /* 변경되는 속성에 대한 애니메이션 속성은? */
+            transition:transform 0.5s; /* scale= 100%=1 */
+            /* 길어지는 애니메이션 연장개념으로 display:none이 아닌 scale0설정 */
+            /* 애니메이션 중심 방향을 바꾸고 싶다면 */
+            transform-origin:right;
         }
-        header nav a:hover:after {
-            display:block;
-            transform:scalex(1);
-            animation:opacity 0.5s;
+        /* after는 위에서 x0 설정으로 선택이 안되기 때문에 부모 a에 마우스를 올렸을때 after를 제어한다는 상대 선택자를 만들어야 한다! */
+        header nav a:hover::after { /* a에 마우스를 올리면 after가 */
+            transform:scaleX(1);
+            
         }
         main {position:relative; width:1400px; height:80vh; margin:0 auto;}
         main img {
             position:absolute; left:0; bottom:100px;
+            animation:sub_title 2s;
+            /* 키프레임 먼저쓰고 애니메이션 적용하기 */
         }
-        @keyframes opacity{
+        @keyframes sub_title {
             0% {opacity:0;}
             100% {opacity:1;}
         }
