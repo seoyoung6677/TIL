@@ -27,7 +27,8 @@
         }
         .slide_wrap .slide_c .slide1 {
             background-image:url(images/bg1.jpg); opacity:1;
-            animation:zoom 1s both;
+            animation:bg 3s both;
+
         }
         .slide_wrap .slide_c .slide2 {background-image:url(images/bg2.jpg);}
         .slide_wrap .slide_c .slide3 {
@@ -42,13 +43,18 @@
         /* class */
 
         /* animation */
-        @keyframes zoom {
+        /*  @keyframes zoom {
             0% {transform: scale(100%);}
             100% {transform: scale(130%);}
+        } */
+        @keyframes title { /* 투명도,크기,위치이동 */
+            0% {transform:translateY(20px); opacity:0;transform:scale(0.8);}
+            100% {transform:translateY(0px);opacity:1;transform:scale(1);}
         }
-        @keyframes title {
-            0% {transform:translateY(0px); opacity:0;}
-            100% {transform:translateY(-30px);opacity:1;}
+        /* 투명도 opacity, 크기 width height or scale 위로 이동:top or translate */
+        @keyframes bg {
+            0%{background-size:100%;}
+            100%{background-size:120%;}
         }
     </style>
     <script>
