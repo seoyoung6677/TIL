@@ -1,0 +1,85 @@
+main img {width:100%;} 
+main img.like {width:20px;} /* .뒤로 붙여쓰면 자기자신 .듸에 띄어쓰면 자식 */ /* 관심 아이콘 크기지정 */
+main {
+    background-color: aqua;
+    max-width:1204px;
+    min-width:320px;
+     margin:0 auto; /* 여기크기에 맞춰서 각각 4개, 6개씩 들어감 */
+
+}
+main .brand {}
+main .brand h1 {}
+main .brand .brand_wrap {
+    display:flex; 
+}
+main .brand .brand_wrap .big {
+    width:460px; height:527px;
+    margin-right:41px; /* left와 right 떨어뜨리기 여백! */
+    overflow: hidden;
+    position:relative;
+}
+
+/* 이미지를 백퍼센트 설정해놨기 때문에 이미지가 이 크기를 따라옴 */
+
+main .brand .brand_wrap .big a {}
+main .brand .brand_wrap .big .thumnail {}
+main .brand .brand_wrap .big .thumnail img {
+    height:100%;
+    width:auto;
+    transform: translate(-200px);
+}
+main .brand .brand_wrap .big .like {
+    position:absolute;
+    top:13px;
+    right:12px;
+}
+main .brand .brand_wrap .big .like img {}
+main .brand .brand_wrap .right {
+    width:699px; /* 사진 3개 크기  오른쪽 3개 묶음*/
+    
+}
+main .brand .brand_wrap .right h2 {}
+main .brand .brand_wrap .right > p {
+    margin-bottom:134px; /* 히어리 30퍼센트 밑에 여백 */
+
+}
+main .brand .brand_wrap .right .list {
+    display: flex; /* 옆으로 나열 */
+    gap:15px; /* 15픽셀씩 떨어뜨리기 그럼 사이사이 15픽셀씩 떨어짐 */
+}
+main .brand .brand_wrap .right .list li {
+    width:223px; /* 개별 사진 크기 */
+  
+
+}
+main .brand .brand_wrap .right .list li a:nth-child(1) {}
+main .brand .brand_wrap .right .list li a:nth-child(1) img {}
+main .brand .brand_wrap .right .list li .brand {}
+main .brand .brand_wrap .right .list li .brand span {}
+main .brand .brand_wrap .right .list li .brand .like {}
+main .brand .brand_wrap .right .list li .brand .like img {}
+main .brand .brand_wrap .right .list li h3 {}
+main .brand .brand_wrap .right .list li .sale_price {}
+main .brand .brand_wrap .right .list li .sale_price span {}
+main .brand .brand_wrap .right .list li .sale_price span:nth-child(1) {}
+main .brand .brand_wrap .right .list li .sale_price span:nth-child(2) {}
+main .girl {}
+main .girl .title {}
+main .girl .title h1 {}
+main .girl .title .more {}
+main .girl .list {display: flex;}
+main .girl .list li {
+    width:calc(100% / 6);
+}
+main .girl .list li a {}
+main .girl .list li a:nth-child(1) {}
+main .girl .list li a:nth-child(1) img {}
+main .girl .list li .brand {}
+main .girl .list li .brand span {}
+main .girl .list li .brand .like {}
+main .girl .list li .brand .like img {}
+main .girl .list li h3 {}
+main .girl .list li .sale_price {}
+main .girl .list li .sale_price span {}
+main .girl .list li .sale_price span:nth-child(1) {}
+main .girl .list li .sale_price span:nth-child(2) {}
